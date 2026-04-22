@@ -1,0 +1,60 @@
+1. Prepare the Environment
+Ensure you are on the main branch and have the latest updates:
+
+Bash
+git checkout main
+git pull
+2. Create a Lightweight Tag
+Mark the current commit as version 1.0 locally:
+
+Bash
+git tag v1.0
+3. Create an Annotated Tag
+Create a tag with metadata and a descriptive message (best for releases):
+
+Bash
+git tag -a v1.2 -m "v1.2 Tag Created"
+4. View and Verify Tags
+List all tags or search for specific version patterns:
+
+Bash
+# List all tags
+git tag
+
+# List tags matching a pattern
+git tag -l "v1.*"
+
+# Show details of a specific tag
+git show v1.0
+5. Push Tags to GitHub
+Tags are not automatically sent to the remote when you push code. You must push them explicitly:
+
+Bash
+# Push a specific tag
+git push origin v1.0
+
+# Push all local tags at once
+git push --tags
+6. Create a GitHub Release (GitHub UI)
+
+Go to your repository on GitHub.
+
+Click on Releases (found on the right-hand sidebar).
+
+Click Draft a new release.
+
+Choose the tag you just pushed (e.g., v1.2).
+
+Add a Release Title and description.
+
+Click Publish release.
+
+7. Deleting Tags (If needed)
+If you make a mistake, you can remove tags locally and remotely:
+
+Bash
+# Delete locally
+git tag -d v1.0
+
+# Delete from remote GitHub repository
+git push origin -d v1
