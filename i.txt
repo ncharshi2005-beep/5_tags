@@ -58,3 +58,18 @@ git tag -d v1.0
 
 # Delete from remote GitHub repository
 git push origin -d v1
+
+
+Experiment 5: Git Tagging and Release Creation
+Aim:
+To understand release management in Git by creating annotated tags, pushing tags to a remote repository, and creating releases on GitHub.
+
+Theory:
+
+Git Tag: A constant reference that points to a specific commit in history. Unlike branches, tags do not move as new commits are added.
+
+Lightweight Tags: Simple pointers to a commit.
+
+Annotated Tags: Recommended for releases. They are stored as full objects containing the tagger name, email, date, and a message.
+
+GitHub Release: A way to package and deliver software to users, often based on Git tags, providing release notes and downloadable binaries.
